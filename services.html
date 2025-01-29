@@ -36,6 +36,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <a href="#main-content" class="skip-to-content">Skip to content</a>
     <noscript>
@@ -46,34 +47,17 @@
         </p>
       </div>
     </noscript>
-    <div class="header-wrapper">
-      <header>
-        <a href="index.html">
-          <img
-            class="header__logo"
-            src="assets/Lucky-Shrub-logos/Asset 2@3x.png"
-            alt="Home of Lucky shrub"
-            loading="lazy"
-          />
-        </a>
-      </header>
-      <button id="burguer" class="burguer" aria-label="Open navigation">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
+
+    <header>
       <nav aria-label="navigation menu">
         <ul class="nav-bar__list">
           <li class="nav-bar__item">
-            <a href="./index.html" class="nav-bar__link">Home</a>
+            <a href="./index.html" class="nav-bar__link current" aria-current="page">
+              Home
+            </a>
           </li>
           <li class="nav-bar__item">
-            <a
-              href="./services.html"
-              class="nav-bar__link current"
-              aria-current="page"
-              >Services</a
-            >
+            <a href="./services.html" class="nav-bar__link">Services</a>
           </li>
           <li class="nav-bar__item">
             <a href="./about-us.html" class="nav-bar__link">About us</a>
@@ -83,7 +67,17 @@
           </li>
         </ul>
       </nav>
-    </div>
+      <a href="index.html">
+        <img class="header__logo" src="assets/Lucky-Shrub-logos/Asset 2@3x.png" alt="Home of Lucky shrub"
+          loading="lazy" />
+      </a>
+      <button id="burguer" class="burguer" aria-label="Open navigation">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </header>
+
     <aside id="mobile-navigation" class="mobile-navigation" aria-hidden="true">
       <ul class="mobile-navigation__list">
         <li class="mobile-navigation__item">
@@ -107,11 +101,11 @@
         </li>
       </ul>
     </aside>
+
     <main id="main-content">
-      <section class="services__banner" aria-labelledby="services-title">
-        <div class="services-title-wrapper">
-          <h1 id="services-title">services</h1>
-        </div>
+
+      <div class="services__banner" aria-labelledby="services-title">
+        <h1 id="services-title" class="services-title">services</h1>
         <p class="services__description">
           At Lucky Shrub, we bring together passion, expertise, and creativity
           to offer a range of services that turn any space into a green oasis.
@@ -122,93 +116,93 @@
           Explore our services below and discover how we can help you create,
           transform, and nurture your outdoor space.
         </p>
-      </section>
-
-      <article class="services__item" aria-labelledby="service1-title">
-        <div class="services__item-info">
-          <h2 id="service1-title" class="services__item-title">landscaping</h2>
-          <p class="services__item-description" style="max-width: 540px">
-            At Lucky Shrub, we specialize in creating stunning gardens and
-            landscapes tailored to your vision. Our expert team is dedicated to
-            transforming your outdoor space into a serene oasis.
-          </p>
-          <a href="#" class="services__item-link">Get free estimate</a>
+      </div>
+      <section class="services">
+        <article class="services__item" aria-labelledby="service1-title">
+          <div class="services__item-info">
+            <h2 id="service1-title" class="services__item-title">landscaping</h2>
+            <p class="services__item-description" style="max-width: 540px">
+              At Lucky Shrub, we specialize in creating stunning gardens and
+              landscapes tailored to your vision. Our expert team is dedicated to
+              transforming your outdoor space into a serene oasis.
+            </p>
+            <a href="#" class="services__item-link">Get free estimate</a>
+            <img
+              src="assets/images/garden-1.png"
+              alt="Beautifull garden layout japanese style with beauty trees"
+              class="services__item-image-mobile"
+              loading="lazy"
+            />
+          </div>
           <img
             src="assets/images/garden-1.png"
             alt="Beautifull garden layout japanese style with beauty trees"
-            class="services__item-image-mobile"
             loading="lazy"
+            class="services__item-image"
           />
-        </div>
-        <div class="services__item-image">
-          <img
-            src="assets/images/garden-1.png"
-            alt="Beautifull garden layout japanese style with beauty trees"
-            loading="lazy"
-          />
-        </div>
-      </article>
-      <hr />
-      <article class="services__item" aria-labelledby="service2-title">
-        <div class="services__item-info">
-          <h2 id="service2-title" class="services__item-title">
-            tree trimming
-          </h2>
-          <p class="services__item-description" style="max-width: 587px">
-            At Lucky Shrub, we specialize in creating stunning gardens and
-            landscapes tailored to your vision. Our expert team is dedicated to
-            transforming your outdoor space into a serene oasis.
-          </p>
-          <a href="#" class="services__item-link">Get free estimate</a>
-          <img
-            src="assets/images/trimming-1.jpg"
-            alt="palm trimmed"
-            class="services__item-image-mobile"
-            loading="lazy"
-          />
-        </div>
-        <div class="services__item-image services__item-double-image">
+        </article>
+  
+        <article class="services__item" aria-labelledby="service2-title">
+          <div class="services__item-info">
+            <h2 id="service2-title" class="services__item-title">
+              tree trimming
+            </h2>
+            <p class="services__item-description" style="max-width: 587px">
+              At Lucky Shrub, we specialize in creating stunning gardens and
+              landscapes tailored to your vision. Our expert team is dedicated to
+              transforming your outdoor space into a serene oasis.
+            </p>
+            <a href="#" class="services__item-link">Get free estimate</a>
+            <img
+              src="assets/images/trimming-1.jpg"
+              alt="palm trimmed"
+              class="services__item-image-mobile"
+              loading="lazy"
+            />
+          </div>
+  
           <img
             src="assets/images/trimming-1.jpg"
             alt="palm trimmed"
             loading="lazy"
+            class="services__item-image"
           />
-        </div>
-        <div class="services__item-image services__item-double-image">
           <img
             src="assets/images/trimming-2-alt.jpg"
             alt="palm trimmed"
             loading="lazy"
+            class="services__item-image"
           />
-        </div>
-      </article>
-      <hr />
-      <article class="services__item" aria-labelledby="service3-title">
-        <div class="services__item-info">
-          <h2 id="service3-title" class="services__item-title">
-            paver instalation
-          </h2>
-          <p class="services__item-description" style="max-width: 744px">
-            At Lucky Shrub, we specialize in creating stunning gardens and
-            landscapes tailored to your vision. Our expert team is dedicated to
-            transforming your outdoor space into a serene oasis.
-          </p>
-          <a href="#" class="services__item-link">Get free estimate</a>
+        </article>
+  
+        <article class="services__item" aria-labelledby="service3-title">
+          <div class="services__item-info">
+            <h2 id="service3-title" class="services__item-title">
+              paver instalation
+            </h2>
+            <p class="services__item-description" style="max-width: 744px">
+              At Lucky Shrub, we specialize in creating stunning gardens and
+              landscapes tailored to your vision. Our expert team is dedicated to
+              transforming your outdoor space into a serene oasis.
+            </p>
+            <a href="#" class="services__item-link">Get free estimate</a>
+            <img
+              src="assets/images/paver-instalation.jpg"
+              alt="beauty garden with paver custom design, chairs and coffe table in the middle"
+              class="services__item-image-mobile"
+              loading="lazy"
+            />
+          </div>
+  
           <img
             src="assets/images/paver-instalation.jpg"
             alt="beauty garden with paver custom design, chairs and coffe table in the middle"
-            class="services__item-image-mobile"
             loading="lazy"
+            class="services__item-image"
           />
-        </div>
-        <div class="services__item-image">
-          <img
-            src="assets/images/paver-instalation.jpg"
-            alt="beauty garden with paver custom design, chairs and coffe table in the middle"
-            loading="lazy"
-          />
-        </div>
-      </article>
+        </article>
+      </section>
+
 
       <script src="scripts/script.js" defer></script>
     </main>

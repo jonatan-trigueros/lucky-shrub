@@ -47,46 +47,38 @@
       </div>
     </noscript>
 
-    <div class="header-wrapper">
-      <header>
-        <a href="index.html">
-          <img
-            class="header__logo"
-            src="assets/Lucky-Shrub-logos/Asset 2@3x.png"
-            alt="Home of Lucky shrub"
-            loading="lazy"
-          />
-        </a>
-      </header>
-      <button id="burguer" class="burguer">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
-      <nav aria-label="navigation menu">
+    <header role="banner">
+      <nav aria-label="navigation menu" role="navigation"></nav>
         <ul class="nav-bar__list">
           <li class="nav-bar__item">
-            <a href="./index.html" class="nav-bar__link">Home</a>
+            <a href="./index.html" class="nav-bar__link current" aria-current="page">
+              Home
+            </a>
           </li>
           <li class="nav-bar__item">
             <a href="./services.html" class="nav-bar__link">Services</a>
           </li>
           <li class="nav-bar__item">
-            <a
-              href="./about-us.html"
-              class="nav-bar__link current"
-              aria-current="page"
-              >About us</a
-            >
+            <a href="./about-us.html" class="nav-bar__link">About us</a>
           </li>
           <li class="nav-bar__item">
             <a href="./contact-us.html" class="nav-bar__link">Contact us</a>
           </li>
         </ul>
       </nav>
-    </div>
+      <a href="index.html" class="header__logo-link">
+        <img class="header__logo" src="assets/Lucky-Shrub-logos/Asset 2@3x.png" alt="Home of Lucky shrub"
+          loading="lazy" />
+      </a>
+      <button id="burguer" class="burguer" aria-label="Open navigation">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </header>
+  
     <aside id="mobile-navigation" class="mobile-navigation">
-      <ul class="mobile-navigation__list">
+      <ul class="mobile-navig</aside>ation__list">
         <li class="mobile-navigation__item">
           <a href="./index.html" class="mobile-navigation__link">Home</a>
         </li>
@@ -110,30 +102,6 @@
     </aside>
 
     <main id="main-content">
-      <section class="about" aria-labelledby="about-title">
-        <div class="about__wrapper">
-          <h1 id="about-title">about us</h1>
-          <p class="about__description">
-            Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden
-            design firm that specializes in garden design and creation,
-            maintenance and landscaping. The company also runs a small plant
-            nursery that sells indoor and outdoor plants, making them a one-stop
-            shop for clients to "transform any space into an oasis you can be
-            proud of". <br /><br />
-            Lucky Shrub was started by a husband and wife team, Jason and Maria,
-            who share a long-time love for plants. Jason is the garden
-            architect. He creates and oversees all designs while managing his
-            team of landscapers. Maria manages all the marketing for the company
-            and oversees the nursery.
-          </p>
-        </div>
-        <img
-          src="assets/Lucky-Shrub-logos/Asset 2@3x.png"
-          alt="The Lucky shrub logo is a desert shrub color green with the text 'lucky shrub' next to it"
-          class="about__logo"
-          loading="lazy"
-        />
-      </section>
 
       <section class="history" aria-labelledby="history-title">
         <h2 class="history__title" id="history-title">our history</h2>
@@ -184,21 +152,16 @@
         <div class="team__member" aria-labelledby="member1-title">
           <div class="team__member-info">
             <h3 class="team__member-name" id="member1-title">
-              Jason - The garden architect
+              Jason
             </h3>
+            <h4 class="team__member-role">
+              The garden architect
+            </h4>
             <p class="team__member-biography">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum erat a elit cursus ultrices. Sed eu enim et enim
-              malesuada porttitor sed a est. Sed molestie nibh eget ipsum
-              gravida, ut vehicula magna luctus. Praesent dui purus, placerat
-              ac.
+              malesuada porttitor sed a est.
             </p>
-            <img
-              src="assets/images/jason.jpg"
-              alt="jason smiling at the camera"
-              class="team__member-photo-mobile"
-              loading="lazy"
-            />
           </div>
           <img
             src="assets/images/jason.jpg"
@@ -211,21 +174,16 @@
         <div class="team__member" aria-labelledby="member2-title">
           <div class="team__member-info">
             <h3 class="team__member-name" id="member2-title">
-              Maria - Marketing expert
+              Maria
             </h3>
+            <h4 class="team__member-role">
+              Marketing expert
+            </h4>
             <p class="team__member-biography">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum erat a elit cursus ultrices. Sed eu enim et enim
-              malesuada porttitor sed a est. Sed molestie nibh eget ipsum
-              gravida, ut vehicula magna luctus. Praesent dui purus, placerat
-              ac.
+              malesuada porttitor sed a est.
             </p>
-            <img
-              src="assets/images/maria.jpg"
-              alt="smiling maria drinking a cup of coffe"
-              class="team__member-photo-mobile"
-              loading="lazy"
-            />
           </div>
           <img
             src="assets/images/maria.jpg"
@@ -238,21 +196,16 @@
         <div class="team__member" aria-labelledby="member3-title">
           <div class="team__member-info">
             <h3 class="team__member-name" id="member3-title">
-              Melisa - Graphic designer
+              Melisa
             </h3>
+            <h4 class="team__member-role">
+              Graphic designer
+            </h4>
             <p class="team__member-biography">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum erat a elit cursus ultrices. Sed eu enim et enim
-              malesuada porttitor sed a est. Sed molestie nibh eget ipsum
-              gravida, ut vehicula magna luctus. Praesent dui purus, placerat
-              ac.
+              malesuada porttitor sed a est.
             </p>
-            <img
-              src="assets/images/melissa.jpg"
-              alt="melissa posing happy for the camera"
-              class="team__member-photo-mobile"
-              loading="lazy"
-            />
           </div>
           <img
             src="assets/images/melissa.jpg"
@@ -265,21 +218,16 @@
         <div class="team__member" aria-labelledby="member4-title">
           <div class="team__member-info">
             <h3 class="team__member-name" id="member4-title">
-              Carlos - 3D and render designer
+              Carlos
             </h3>
+            <h4 class="team__member-role">
+              3D and render designer
+            </h4>
             <p class="team__member-biography">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum erat a elit cursus ultrices. Sed eu enim et enim
-              malesuada porttitor sed a est. Sed molestie nibh eget ipsum
-              gravida, ut vehicula magna luctus. Praesent dui purus, placerat
-              ac.
+              malesuada porttitor sed a est.
             </p>
-            <img
-              src="assets/images/carlos.jpg"
-              alt="carlos smiling for the camera, he looks a little nervous"
-              class="team__member-photo-mobile"
-              loading="lazy"
-            />
           </div>
           <img
             src="assets/images/carlos.jpg"
@@ -292,21 +240,16 @@
         <div class="team__member" aria-labelledby="member5-title">
           <div class="team__member-info">
             <h3 class="team__member-name" id="member5-title">
-              Astrid - Receptionist
+              Astrid
             </h3>
+            <h4 class="team__member-role">
+              Receptionist
+            </h4>
             <p class="team__member-biography">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               interdum erat a elit cursus ultrices. Sed eu enim et enim
-              malesuada porttitor sed a est. Sed molestie nibh eget ipsum
-              gravida, ut vehicula magna luctus. Praesent dui purus, placerat
-              ac.
+              malesuada porttitor sed a est.
             </p>
-            <img
-              src="assets/images/astrid.jpg"
-              alt="astrid posing beauty for the camera"
-              class="team__member-photo-mobile"
-              loading="lazy"
-            />
           </div>
           <img
             src="assets/images/astrid.jpg"

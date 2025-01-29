@@ -1,34 +1,36 @@
-document
-  .querySelectorAll(".styles__item, .services__item")
-  .forEach((article) => {
-    const title = article.querySelector(
-      ".styles__item-title, .services__item-title"
-    );
-    const description = article.querySelector(
-      ".styles__item-description, .services__item-description"
-    );
-
-    if (title && description) {
-      description.style.maxWidth = title.offsetWidth + "px";
-    }
-  });
-
-window.addEventListener("resize", () => {
-  document
-    .querySelectorAll(".styles__item, .services__item")
-    .forEach((article) => {
+document.addEventListener("DOMContentLoaded", () => {
+  const autoWidth = () => {
+    document.querySelectorAll(".styles__item-info, .services__item-info").forEach((article) => {
       const title = article.querySelector(
         ".styles__item-title, .services__item-title"
       );
-      const description = article.querySelector(
-        ".styles__item-description, .services__item-description"
-      );
-
-      if (title && description) {
-        description.style.maxWidth = title.offsetWidth + "px";
-      }
+      article.style.width = title.offsetWidth + "px";
     });
+  };
+  autoWidth();
+  window.addEventListener("resize", autoWidth);  
 });
+
+
+const autoWidth = () => {
+  document.querySelectorAll(".styles__item-info, .services__item").forEach((article) => {
+    const title = article.querySelector(
+      ".styles__item-title, .services__item-title"
+    );
+    article.style.width = title.offsetWidth + "px";
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
 
 document.getElementById("burguer").onclick = () => {
   const burguer = document.getElementById("burguer");
