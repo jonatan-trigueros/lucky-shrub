@@ -38,7 +38,7 @@
   </noscript>
 
   <header>
-    <nav aria-label="Main navigation">
+    <nav aria-label="Main navigation" class="nav-bar">
       <ul class="nav-bar__list">
         <li class="nav-bar__item">
           <a href="./index.html" class="nav-bar__link current" aria-current="page">Home</a>
@@ -58,15 +58,16 @@
       <img class="header__logo" src="assets/Lucky-Shrub-logos/Asset 2@3x.png" alt="Lucky Shrub company logo"
         loading="lazy" />
     </a>
-    <button id="burguer" class="burguer" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button id="burguer" class="burguer" aria-label="Open navigation" aria-expanded="false"
+      aria-controls="mobile-navigation">
+      <div></div>
+      <div></div>
+      <div></div>
     </button>
   </header>
 
   <aside id="mobile-navigation" class="mobile-navigation" aria-hidden="true">
-    <nav aria-label="Mobile navigation">
+    <nav aria-label="Mobile navigation" class="mobile-nav-bar">
       <ul class="mobile-navigation__list">
         <li class="mobile-navigation__item">
           <a href="./index.html" class="mobile-navigation__link current" aria-current="page">Home</a>
@@ -105,7 +106,7 @@
 
       <img class="hero__image" src="assets/images/garden-design.jpg" alt="A modular garden design" loading="lazy" />
     </section>
-
+    <hr>
     <section id="projects" class="projects" aria-labelledby="projects-title">
       <h2 id="projects-title" class="projects-title">Latest projects</h2>
 
@@ -155,11 +156,9 @@
       </article>
 
     </section>
-
+    <hr>
     <section id="styles" class="styles" aria-labelledby="styles-title">
       <h2 id="styles-title" class="styles-title">Popular styles</h2>
-
-
       <article class="styles__item" aria-labelledby="style2-title">
         <div class="styles__item-info">
           <h3 class="styles__item-title" id="style2-title">Contemporary</h3>
@@ -172,8 +171,6 @@
             vitae, dapibus a lectus. Donec cursus erat.
           </p>
           <a href="#" class="styles__item-link">View style</a>
-          <img src="assets/images/contemporary-garden-alt.jpg" class="styles__item-image__mobile"
-            alt="Contemporary garden style" loading="lazy" />
         </div>
 
         <img src="assets/images/contemporary-garden-alt.jpg" alt="" loading="lazy" class="styles__item-image" />
@@ -190,7 +187,6 @@
             vitae, dapibus a lectus. Donec cursus erat.
           </p>
           <a href="#" class="styles__item-link">View style</a>
-          <img src="assets/images/victorian-garden-2.jpg" class="styles__item-image__mobile" alt="" loading="lazy" />
         </div>
         <img src="assets/images/victorian-garden-2.jpg" alt="" loading="lazy" class="styles__item-image" />
       </article>
@@ -206,16 +202,11 @@
             vitae, dapibus a lectus. Donec cursus erat.
           </p>
           <a href="#" class="styles__item-link">View style</a>
-          <img src="assets/images/modular-style.jpg" class="styles__item-image__mobile" alt="Modular garden style"
-            loading="lazy" />
         </div>
 
         <img src="assets/images/modular-style.jpg" alt="Modular garden style" loading="lazy"
           class="styles__item-image" />
       </article>
-
-
-
     </section>
 
     <script src="./scripts/script.js" defer></script>

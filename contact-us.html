@@ -42,12 +42,10 @@
   </noscript>
 
   <header>
-    <nav aria-label="navigation menu">
+    <nav aria-label="Main navigation" class="nav-bar">
       <ul class="nav-bar__list">
         <li class="nav-bar__item">
-          <a href="./index.html" class="nav-bar__link current" aria-current="page">
-            Home
-          </a>
+          <a href="./index.html" class="nav-bar__link">Home</a>
         </li>
         <li class="nav-bar__item">
           <a href="./services.html" class="nav-bar__link">Services</a>
@@ -56,36 +54,39 @@
           <a href="./about-us.html" class="nav-bar__link">About us</a>
         </li>
         <li class="nav-bar__item">
-          <a href="./contact-us.html" class="nav-bar__link">Contact us</a>
+          <a href="./contact-us.html" class="nav-bar__link current" aria-current="page">Contact us</a>
         </li>
       </ul>
     </nav>
-    <a href="index.html">
-      <img class="header__logo" src="assets/Lucky-Shrub-logos/Asset 2@3x.png" alt="Home of Lucky shrub"
+    <a href="index.html" class="header__logo-link">
+      <img class="header__logo" src="assets/Lucky-Shrub-logos/Asset 2@3x.png" alt="Lucky Shrub company logo"
         loading="lazy" />
     </a>
-    <button id="burguer" class="burguer" aria-label="Open navigation">
+    <button id="burguer" class="burguer" aria-label="Open navigation" aria-expanded="false"
+      aria-controls="mobile-navigation">
       <div></div>
       <div></div>
       <div></div>
     </button>
   </header>
 
-  <aside id="mobile-navigation" class="mobile-navigation">
-    <ul class="mobile-navigation__list">
-      <li class="mobile-navigation__item">
-        <a href="./index.html" class="mobile-navigation__link">Home</a>
-      </li>
-      <li class="mobile-navigation__item">
-        <a href="./services.html" class="mobile-navigation__link">Services</a>
-      </li>
-      <li class="mobile-navigation__item">
-        <a href="./about-us.html" class="mobile-navigation__link">About us</a>
-      </li>
-      <li class="mobile-navigation__item">
-        <a href="./contact-us.html" class="mobile-navigation__link current" aria-current="page">Contact us</a>
-      </li>
-    </ul>
+  <aside id="mobile-navigation" class="mobile-navigation" aria-hidden="true">
+    <nav aria-label="Mobile navigation" class="mobile-nav-bar">
+      <ul class="mobile-navigation__list">
+        <li class="mobile-navigation__item">
+          <a href="./index.html" class="mobile-navigation__link">Home</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a href="./services.html" class="mobile-navigation__link">Services</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a href="./about-us.html" class="mobile-navigation__link current" aria-current="page">About us</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a href="./contact-us.html" class="mobile-navigation__link">Contact us</a>
+        </li>
+      </ul>
+    </nav>
   </aside>
 
   <main id="main-content">
@@ -187,30 +188,27 @@
           </a>
         </div>
       </div>
-      <div class="form">
-        <form action="post" aria-labelledby="form-title">
-          <h3 id="form-title">Share us your idea</h3>
+      <form action="post" aria-labelledby="form-title">
+        <h3 id="form-title" class="form-title">Share us your idea</h3>
 
-          <label for="name">Full name<span class="required"> *</span></label><br />
-          <input type="text" name="name" id="name" required aria-required="true" aria-label="Full name" /><br />
+        <label for="name">Full name<span class="required"> *</span></label><br />
+        <input type="text" name="name" id="name" required aria-required="true" aria-label="Full name" /><br />
 
-          <label for="phone">Phone number<span class="required"> *</span></label><br />
-          <input type="phone" name="phone" id="phone" required aria-required="true" aria-label="Phone number" /><br />
+        <label for="phone">Phone number<span class="required"> *</span></label><br />
+        <input type="phone" name="phone" id="phone" required aria-required="true" aria-label="Phone number" /><br />
 
-          <label for="email">Email<span class="required"> *</span></label><br />
-          <input type="email" name="email" id="email" required aria-required="true" aria-label="Email" /><br />
+        <label for="email">Email<span class="required"> *</span></label><br />
+        <input type="email" name="email" id="email" required aria-required="true" aria-label="Email" /><br />
 
-          <label for="message">Message - Share us your idea<span class="required">
-              *</span></label><br />
-          <textarea name="message" id="message" rows="10" required aria-required="true"
-            aria-label="Message - Share us your idea"></textarea><br />
+        <label for="message">Message - Share us your idea<span class="required">
+            *</span></label><br />
+        <textarea name="message" id="message" rows="10" required aria-required="true"
+          aria-label="Message - Share us your idea"></textarea><br />
 
-          <button type="submit" aria-label="Send request">
-            Send request
-          </button>
-        </form>
-      </div>
-
+        <button type="submit" aria-label="Send request">
+          Send request
+        </button>
+      </form>
     </section>
     <script src="./scripts/script.js" defer></script>
   </main>
